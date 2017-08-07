@@ -55,9 +55,13 @@ function callback(songs){
 }
 
 
+//you can spread the jQuery object into an array
+//if you want access to array properties
+let $divs = $("div");
+console.log("$divs: ",  $divs);
 
-
-
+let divsArray = [...$divs];
+console.log("divsArray:", divsArray);
 
 
 });
